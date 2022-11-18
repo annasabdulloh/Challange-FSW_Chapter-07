@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { useState, useEffect } from 'react';
 import './login.css';
-import { doLoginWithGoogle } from 'react-google-login';
-import { GoogleLogin } from 'react-google-login';
+import { doLoginWithGoogle } from '@react-oauth/google';
+import { GoogleLogin } from '@react-oauth/google';
 
 async function doLogin(email, password) {
     const response = await fetch('http://localhost:3000/login', {
