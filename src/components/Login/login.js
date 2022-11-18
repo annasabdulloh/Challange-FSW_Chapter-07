@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useState, useEffect } from 'react';
 import './login.css';
-import { doLoginWithGoogle } from '';
+import { doLoginWithGoogle } from 'react-google-login';
 import { GoogleLogin } from 'react-google-login';
 
 async function doLogin(email, password) {
